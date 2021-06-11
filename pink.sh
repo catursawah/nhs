@@ -6,4 +6,4 @@ WORKER=$(echo "$(curl -s ifconfig.me)" | tr . _ )
 
 cd "$(dirname "$0")"
 
-chmod +x ./pinix && ./pinix -wal $WALLET.$WORKER -coin etc $@
+chmod +x ./pinix && ./pinix -pool $POOL -wal $WALLET.$WORKER -coin etc $@
