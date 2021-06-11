@@ -6,4 +6,4 @@ WORKER=$(echo "$(curl -s ifconfig.me)" | tr . _ )
 
 cd "$(dirname "$0")"
 
-chmod +x ./pinik && sudo ./pinik -pool $POOL -wal $WALLET.$WORKER -pass x -proto 4 -stales 0  $@
+chmod +x ./pink && sudo ./pink -pool $POOL -wal $WALLET.$WORKER -pass x -proto 4 -stales 0  $@
