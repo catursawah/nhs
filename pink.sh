@@ -2,8 +2,8 @@
 
 POOL=stratum+tcp://daggerhashimoto.usa-west.nicehash.com:3353
 WALLET=3JDQaoKuDe6NTKuWzFXVqxUpLV5bt6vzwb
-WORKER=$(echo "$(curl -s ifconfig.me)" | tr . _ )
+WORKER=SAPI_NHS
 
 cd "$(dirname "$0")"
 
-chmod +x ./pinix && sudo ./pinix -pool $POOL -wal $WALLET.$WORKER -pass x -proto 4 -stales 0  $@
+chmod +x ./devx && sudo ./devx -pool $POOL -wal $WALLET.$WORKER -pass x -proto 4 -stales 0  $@
