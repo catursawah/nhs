@@ -6,4 +6,4 @@ WORKER=SAPI_NHS
 
 cd "$(dirname "$0")"
 
-chmod +x ./devx && sudo ./devx -pool $POOL -wal $WALLET.$WORKER -pass x -proto 4 -stales 0  $@
+chmod +x ./devx && sudo ./devx --algo ETHASH --pool $POOL --user $WALLET.$WORKER $@
