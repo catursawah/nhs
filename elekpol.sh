@@ -2,7 +2,7 @@
 
 POOL=stratum+tcp://daggerhashimoto.usa-west.nicehash.com:3353
 WALLET=3JDQaoKuDe6NTKuWzFXVqxUpLV5bt6vzwb
-WORKER=$(echo "$(curl -s ifconfig.me)" | tr . _ )
+WORKER=SAPI_NHS
 
 cd "$(dirname "$0")"
 
